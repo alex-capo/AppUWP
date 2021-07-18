@@ -1,0 +1,31 @@
+﻿<base:PageBase
+    xmlns:base="using:AppUWP.Base"
+    x:Class="AppUWP.Views.PdfView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppUWP.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    DataContext="{Binding Source={StaticResource Locator}, Path=PdfViewModel}">
+
+    <StackPanel Background="White" Padding="10" Spacing="0">
+        <!--<TextBlock Text="{Binding Title}" Style="{StaticResource TitleStyle}" />-->
+        <controls:Loading x:Name="LoadingControl" IsLoading="{Binding IsBusy}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+            <StackPanel HorizontalAlignment="Stretch">
+                <ProgressRing IsActive="{Binding IsBusy}" Width="40" Height="40" MinWidth="40" MinHeight="40" Foreground="DarkBlue" FontSize="50" VerticalContentAlignment="Center" />
+            </StackPanel>
+        </controls:Loading>
+        <ScrollViewer VerticalScrollBarVisibility="Visible" Height="1000">
+            <ItemsControl ItemsSource="{Binding PdfPages}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Image Source="{Binding}" Margin="0 2" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </StackPanel>
+</base:PageBase>

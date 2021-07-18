@@ -1,0 +1,25 @@
+﻿<base:PageBase
+    xmlns:base="using:AppUWP.Base"
+    x:Class="AppUWP.Views.TreeView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:models="using:AppUWP.Models"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    DataContext="{Binding Source={StaticResource Locator}, Path=TreeViewModel}">
+
+    <StackPanel Background="White" Padding="10" Spacing="0">
+        <muxc:TreeView ItemsSource="{Binding DataTreeView}" Expanding="TreeView_Expanding" Collapsed="TreeView_Collapsed" 
+                       SelectionMode="Single" CanDragItems="False" AllowDrop="False" Visibility="Visible">
+            <muxc:TreeView.ItemTemplate>
+                <DataTemplate x:DataType="models:ItemTreeView">
+                    <muxc:TreeViewItem ItemsSource="{x:Bind Children}" Content="{x:Bind Name}" IsExpanded="{Binding IsExpanded}" />
+                </DataTemplate>
+            </muxc:TreeView.ItemTemplate>
+        </muxc:TreeView>
+    </StackPanel>
+</base:PageBase>
+    
