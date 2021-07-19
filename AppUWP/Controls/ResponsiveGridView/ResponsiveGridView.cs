@@ -105,13 +105,13 @@ namespace AppUWP.Controls
             set { SetValue(OneRowModeEnabledProperty, value); }
         }
 
-        private ScrollMode VerticalScroll
+        public ScrollMode VerticalScroll
         {
             get { return (ScrollMode)GetValue(VerticalScrollProperty); }
             set { SetValue(VerticalScrollProperty, value); }
         }
 
-        private double ItemWidth
+        public double ItemWidth
         {
             get { return (double)GetValue(ItemWidthProperty); }
             set { SetValue(ItemWidthProperty, value); }

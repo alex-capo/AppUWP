@@ -123,6 +123,11 @@
     <Compile Include="Controls\ResponsiveGridView\ResponsiveGridView.cs" />
     <Compile Include="Controls\SectionList\SectionList.cs" />
     <Compile Include="Controls\SectionList\SectionListItem.cs" />
+    <Compile Include="Controls\SlideShow\SlideShow.cs" />
+    <Compile Include="Controls\SlideShow\SlideShow.Items.cs" />
+    <Compile Include="Controls\SlideShow\SlideShow.Play.cs" />
+    <Compile Include="Extensions\AnimationExtensions.cs" />
+    <Compile Include="Extensions\FrameworkElementExtensions.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Models\ItemTreeView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -249,6 +254,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Controls\SlideShow\SlideShow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -293,6 +302,7 @@
   <ItemGroup>
     <Content Include="Assets\Images.json" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

@@ -5,6 +5,7 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="ms-appx:///Controls/SectionList/SectionList.xaml"/>
         <ResourceDictionary Source="ms-appx:///Controls/ResponsiveGridView/ResponsiveGridView.xaml"/>
+        <ResourceDictionary Source="ms-appx:///Controls/SlideShow/SlideShow.xaml"/>
     </ResourceDictionary.MergedDictionaries>
     
 </ResourceDictionary>

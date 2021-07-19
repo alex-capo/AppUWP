@@ -1,10 +1,5 @@
 ﻿[
   {
-    "Title": "Sample Gif",
-    "Category": "Gif",
-    "Thumbnail": "/Assets/Images/CreateApp.gif"
-  },
-  {
     "Title": "Big four summer heat",
     "Category": "Nature",
     "Thumbnail": "/Assets/Images/BigFourSummerHeat.png"
@@ -15,7 +10,7 @@
     "Thumbnail": "/Assets/Images/BisonBadlandsChillin.png"
   },
   {
-    "Title": "Sample Gif",
+    "Title": "Molecule",
     "Category": "Gif",
     "Thumbnail": "https://nodoartes.files.wordpress.com/2021/04/52445aefa27a3bc5.gif"
   },

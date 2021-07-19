@@ -1,17 +1,19 @@
-﻿using AppUWP.Base;
-using AppUWP.Views;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Windows.UI.Xaml.Navigation;
-
+﻿
 namespace AppUWP.ViewModels
 {
+    using AppUWP.Base;
+    using AppUWP.Services;
+    using AppUWP.Views;
+    using System;
+    using System.Collections.ObjectModel;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Windows.UI.Xaml;
+    using Windows.UI.Xaml.Navigation;
     public class MainViewModel : ViewModelBase
     {
-
+        public ObservableCollection<object> Items { get; set; }
+        public DataTemplate ItemTemplate { get; set; }
         public void Navigate(string pageName)
         {
             switch (pageName)
@@ -32,16 +34,14 @@ namespace AppUWP.ViewModels
                     break;
             }
         }
-
         public override Task OnNavigatedTo(NavigationEventArgs args)
         {
+            Items = new ObservableCollection<object>(ImagesDataSource.GetItems().Reverse().Skip(4));
             return null;
         }
-
         public override Task OnNavigatedFrom(NavigationEventArgs args)
         {
             return null;
         }
-
     }
 }

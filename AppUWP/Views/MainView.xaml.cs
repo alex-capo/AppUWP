@@ -6,7 +6,7 @@ namespace AppUWP.Views
     using AppUWP.Base;
     using AppUWP.ViewModels;
     using Microsoft.UI.Xaml.Controls;
-    using System.Linq;
+
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -18,7 +18,7 @@ namespace AppUWP.Views
             this.InitializeComponent();
             base.MenuFrame = menuFrame;
             vm = this.DataContext as MainViewModel;
-        }
+        }       
 
         private void NavView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
         {
