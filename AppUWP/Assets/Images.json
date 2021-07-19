@@ -40,7 +40,7 @@
     "Thumbnail": "/Assets/Images/LunchBreak.png"
   },
   {
-    "Title": "Milky way St Helens hike purple",
+    "Title": "Milky way hike purple",
     "Category": "Nature",
     "Thumbnail": "/Assets/Images/MilkyWayStHelensHikePurple.png"
   },
@@ -68,6 +68,11 @@
     "Title": "Owl",
     "Category": "Animal",
     "Thumbnail": "/Assets/Images/Owl.png"
+  },
+  {
+    "Title": "Doggy",
+    "Category": "Animal",
+    "Thumbnail": "/Assets/Images/Dog.png"
   },
   {
     "Title": "Oregon winery namaste",
@@ -113,6 +118,11 @@
     "Title": "Speed triple atrists point",
     "Category": "Motor",
     "Thumbnail": "/Assets/Images/SpeedTripleAtristsPoint.png"
+  },
+  {
+    "Title": "Aventator",
+    "Category": "Motor",
+    "Thumbnail": "/Assets/Images/Lamborghini.png"
   },
   {
     "Title": "Snowy interbayt",

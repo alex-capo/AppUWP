@@ -15,16 +15,7 @@ namespace AppUWP.ViewModels
         public ObservableCollection<object> CityItems { get; set; }
         public ObservableCollection<object> MotorItems { get; set; }
         public DataTemplate ItemTemplate { get; set; }
-        public UxViewModel()
-        {
-            var items = ImagesDataSource.GetItems();
-
-            this.NatureItems = new ObservableCollection<object>(items.Where(x => x.Category == "Nature"));
-            this.AnimalItems = new ObservableCollection<object>(items.Where(x => x.Category == "Animal"));
-            this.CityItems = new ObservableCollection<object>(items.Where(x => x.Category == "City"));
-            this.MotorItems = new ObservableCollection<object>(items.Where(x => x.Category == "Motor"));
-            //this.ItemTemplate = Resources["PhotoItemTemplate"] as DataTemplate;
-        }
+    
         public override Task OnNavigatedFrom(NavigationEventArgs args)
         {
             return null;
@@ -32,6 +23,11 @@ namespace AppUWP.ViewModels
 
         public override Task OnNavigatedTo(NavigationEventArgs args)
         {
+            var items = ImagesDataSource.GetItems();
+            this.NatureItems = new ObservableCollection<object>(items.Where(x => x.Category == "Nature"));
+            this.AnimalItems = new ObservableCollection<object>(items.Where(x => x.Category == "Animal"));
+            this.CityItems = new ObservableCollection<object>(items.Where(x => x.Category == "City"));
+            this.MotorItems = new ObservableCollection<object>(items.Where(x => x.Category == "Motor"));
             return null;
         }
     }

@@ -120,6 +120,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Base\Locator.cs" />
+    <Compile Include="Controls\ResponsiveGridView\ResponsiveGridView.cs" />
+    <Compile Include="Controls\SectionList\SectionList.cs" />
+    <Compile Include="Controls\SectionList\SectionListItem.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Models\ItemTreeView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -156,54 +159,32 @@
     <Content Include="Assets\BadgeLogo.scale-150.png" />
     <Content Include="Assets\BadgeLogo.scale-200.png" />
     <Content Include="Assets\BadgeLogo.scale-400.png" />
-    <Content Include="Assets\Images\Animation.png" />
-    <Content Include="Assets\Images\AppCache.png" />
     <Content Include="Assets\Images\BigFourSummerHeat.png" />
-    <Content Include="Assets\Images\BingIcon.png" />
     <Content Include="Assets\Images\BisonBadlandsChillin.png" />
-    <Content Include="Assets\Images\Carousel.png" />
     <Content Include="Assets\Images\ColumbiaRiverGorge.png" />
-    <Content Include="Assets\Images\CreateApp.gif" />
-    <Content Include="Assets\Images\Desktop.png" />
-    <Content Include="Assets\Images\Facebook.png" />
-    <Content Include="Assets\Images\FacebookIcon.png" />
-    <Content Include="Assets\Images\FlickrIcon.png" />
+    <Content Include="Assets\Images\dog.png" />
     <Content Include="Assets\Images\GiantSlabInOregon.png" />
     <Content Include="Assets\Images\GrandTetons.png" />
     <Content Include="Assets\Images\HeroImage.png" />
-    <Content Include="Assets\Images\HomeLogo.png" />
-    <Content Include="Assets\Images\HomeLogo2.png" />
-    <Content Include="Assets\Images\html-block.png" />
-    <Content Include="Assets\Images\ImageEx.png" />
-    <Content Include="Assets\Images\InstagramIcon.png" />
+    <Content Include="Assets\Images\HeroImage2.png" />
     <Content Include="Assets\Images\LakeAnnMushroom.png" />
+    <Content Include="Assets\Images\Lamborghini.png" />
     <Content Include="Assets\Images\LunchBreak.png" />
     <Content Include="Assets\Images\MilkyWayStHelensHikePurple.png" />
     <Content Include="Assets\Images\MitchellButtes.png" />
     <Content Include="Assets\Images\MultnomahFalls.png" />
-    <Content Include="Assets\Images\Navigation.png" />
     <Content Include="Assets\Images\NorthernCascadesReflection.png" />
     <Content Include="Assets\Images\NovemberHikeWaterfall.png" />
     <Content Include="Assets\Images\OregonWineryNamaste.png" />
     <Content Include="Assets\Images\Owl.png" />
     <Content Include="Assets\Images\PaintedHillsPathway.png" />
-    <Content Include="Assets\Images\Phone.png" />
-    <Content Include="Assets\Images\Pivorama.png" />
-    <Content Include="Assets\Images\PrivacyTerms.png" />
-    <Content Include="Assets\Images\ResponsiveGridView.png" />
     <Content Include="Assets\Images\RunningDogPacificCity.png" />
     <Content Include="Assets\Images\ShootingOnAutoOnTheDrone.png" />
     <Content Include="Assets\Images\SmithnRockDownTheRiverView.png" />
     <Content Include="Assets\Images\SnowyInterbayt.png" />
     <Content Include="Assets\Images\SpeedTripleAtristsPoint.png" />
-    <Content Include="Assets\Images\Tablet.png" />
-    <Content Include="Assets\Images\Twitter.png" />
     <Content Include="Assets\Images\Van.png" />
-    <Content Include="Assets\Images\VariableSizedGrid.png" />
-    <Content Include="Assets\Images\VirtualBox.png" />
     <Content Include="Assets\Images\WestSeattleView.png" />
-    <Content Include="Assets\Images\WordPress.png" />
-    <Content Include="Assets\Images\YouTubePlay.png" />
     <Content Include="Assets\landcape.jpg" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-125.png" />
@@ -260,6 +241,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Controls\ResponsiveGridView\ResponsiveGridView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\SectionList\SectionList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\MainView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

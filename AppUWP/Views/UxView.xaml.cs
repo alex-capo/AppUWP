@@ -1,4 +1,5 @@
 ﻿using AppUWP.Base;
+using AppUWP.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,9 +24,27 @@ namespace AppUWP.Views
     /// </summary>
     public sealed partial class UxView : PageBase
     {
+
+        //#region ItemTemplate
+        //public DataTemplate ItemTemplate
+        //{
+        //    get { return (DataTemplate)GetValue(ItemTemplateProperty); }
+        //    set { SetValue(ItemTemplateProperty, value); }
+        //}
+
+        //public static readonly DependencyProperty ItemTemplateProperty = DependencyProperty.Register("ItemTemplate", typeof(DataTemplate), typeof(UxView), new PropertyMetadata(null));
+        //#endregion
+
         public UxView()
         {
             this.InitializeComponent();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            UxViewModel vm = this.DataContext as UxViewModel;
+            vm.ItemTemplate = Resources["PhotoItemTemplate"] as DataTemplate;
+            base.OnNavigatedTo(e);
         }
     }
 }
